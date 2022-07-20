@@ -331,6 +331,7 @@ All Group Start
 
 .mem-country {
     display: flex;
+    justify-content: space-evenly;
     padding: 1px;
     background-color: #ffffe8;
     border-radius: 8px;
@@ -343,8 +344,8 @@ All Group Start
 }
 
 .mem-country img {
-    width: 25%;
-    height: 10%;
+    width: 20%;
+    height: 8%;
     margin: 0 10%;
 }
 
