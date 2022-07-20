@@ -43,13 +43,13 @@ main {
 
 @keyframes sliding {
     0% {
-        left: 150px;
-        top: 410px;
+        left: 145px;
+        top: 390px;
     }
 
     100% {
-        left: 340px;
-        top: 405px;
+        left: 325px;
+        top: 385px;
     }
 }
 
@@ -59,7 +59,7 @@ main {
     align-items: flex-start;
     flex-direction: column;
     color: white;
-    padding-left: 4%;
+    padding-left: 8%;
     width: 50%;
     margin-right: 10%;
 }
