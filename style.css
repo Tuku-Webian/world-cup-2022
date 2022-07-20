@@ -206,11 +206,16 @@ article {
 
 .blog-info a {
     text-decoration: none;
-    color: #544d4d;
-    border: 2px solid #7d7474;
+    color: rgb(159, 44, 44);
+    background-color: #ffcac1;
+    border: 2px solid rgb(159, 44, 44);
     border-radius: 5px;
     padding: 0 5px;
     font-size: 15px;
+}
+.blog-info a:hover{
+    color: darkblue;
+    border: 2px solid darkblue;
 }
 
 .blog-info h3 {
@@ -268,8 +273,14 @@ footer {
 .menu ul li a {
     text-decoration: none;
     color: white;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 300;
+}
+.menu ul li a:hover{
+    color: rgb(255, 71, 71);
+}
+.social-media ul li a:hover, footer span:hover{
+    color: yellow;
 }
 
 .social-media ul li a {
@@ -288,6 +299,9 @@ hr {
 
 footer span {
     color: #FD4328;
+}
+footer small a{
+    text-decoration: none;
 }
 
 footer small {
