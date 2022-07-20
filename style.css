@@ -1,3 +1,7 @@
+/* ---------
+Google Fonts 
+----------*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
 
 body {
@@ -5,7 +9,7 @@ body {
 }
 
 main {
-    width: 1100px;
+    width: 89%;
     margin: 0 auto;
 }
 
@@ -21,7 +25,6 @@ main {
 @keyframes example {
     from {
         background: #2B0848;
-
     }
 
     to {
@@ -30,10 +33,10 @@ main {
 }
 
 .ball {
-    left: 150px;
-    top: 410px;
-    width: 65px;
-    height: 65px;
+    left: 11.5vw;
+    top: 30.5vw;
+    width: 5vw;
+    height: 5vw;
     border-radius: 50%;
     background-color: white;
     position: relative;
@@ -43,13 +46,13 @@ main {
 
 @keyframes sliding {
     0% {
-        left: 145px;
-        top: 390px;
+        left: 11.5vw;
+        top: 31vw;
     }
 
     100% {
-        left: 325px;
-        top: 385px;
+        left: 25.5vw;
+        top: 30.5vw;
     }
 }
 
@@ -59,14 +62,9 @@ main {
     align-items: flex-start;
     flex-direction: column;
     color: white;
-    padding-left: 8%;
+    padding-left: 4%;
     width: 50%;
     margin-right: 10%;
-}
-
-.bannar-info h1 {
-    font-size: 30px;
-    margin: 0;
 }
 
 .tm {
@@ -74,7 +72,8 @@ main {
 }
 
 .bannar-info p {
-    font-size: 14px;
+    text-align: center;
+    font-size: 0.9em;
     font-weight: 100;
     margin: 4% 0 0;
 }
@@ -86,12 +85,12 @@ main {
 .btn {
     text-decoration: none;
     color: #FD4328;
-    padding: 5px 15px;
+    padding: 0.5vw 1.5vw;
     text-transform: capitalize;
     border: 2px solid #FD4328;
     border-radius: 8px;
     margin-top: 4%;
-    font-size: 14px;
+    font-size: 1.2vw;
     font-weight: 400;
     transition: 0.3s;
 }
@@ -105,6 +104,7 @@ main {
     display: flex;
     justify-content: flex-end;
     width: 50%;
+    padding-right: 4%;
 }
 
 .bannar-photo img {
@@ -126,7 +126,7 @@ main {
 
 .blog-container {
     display: flex;
-    margin-top: 20px;
+    margin-top: 1.7vh;
 }
 
 aside {
@@ -147,28 +147,20 @@ aside ul li a {
     display: block;
     background-color: white;
     text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: 0.6vh;
     border-radius: 7px;
-    transition: all 0.3s;
+    transition: all 0.2s;
 }
 
 aside ul li a:link,
 aside ul li a:visited {
     text-decoration: none;
     color: black;
-    font-size: 1.1em;
+    font-size: 1.4vw;
     padding: 10px;
 }
 
-aside ul li a:visited {
-    text-decoration: none;
-    color: black;
-    font-size: 1.1em;
-    padding: 10px;
-}
-
-aside ul li a:hover,
-aside ul li a:active {
+aside ul li a:hover{
     text-indent: 10px;
     background: linear-gradient(rgb(255, 102, 102), rgb(159, 44, 44));
     color: white;
@@ -213,7 +205,8 @@ article {
     padding: 0 5px;
     font-size: 15px;
 }
-.blog-info a:hover{
+
+.blog-info a:hover {
     color: darkblue;
     border: 2px solid darkblue;
 }
@@ -276,10 +269,13 @@ footer {
     font-size: 13px;
     font-weight: 300;
 }
-.menu ul li a:hover{
+
+.menu ul li a:hover {
     color: rgb(255, 71, 71);
 }
-.social-media ul li a:hover, footer span:hover{
+
+.social-media ul li a:hover,
+footer span:hover {
     color: yellow;
 }
 
@@ -300,7 +296,8 @@ hr {
 footer span {
     color: #FD4328;
 }
-footer small a{
+
+footer small a {
     text-decoration: none;
 }
 
@@ -380,3 +377,70 @@ footer small {
 .group h2 {
     text-align: center;
 }
+.view-1{
+    display: none;
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid gray;
+    padding: 8px 15px;
+    width: 10%;
+    background: linear-gradient(rgb(255, 102, 102), rgb(159, 44, 44));
+    border: 0;
+    border-radius: 7px;
+}
+.view-1 a{
+    text-decoration: none;
+    color: white;
+
+}
+
+/* --------------------------------------
+Medium devices (tablets, 768px and 992px) 
+----------------------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .blog-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    aside {
+        background: none;
+        border: 1px solid lightgray;
+        border-radius: 10px;
+        height: 100%;
+        margin-right: 0;
+    }
+    aside ul{
+        margin: 6px 0 0 0;
+        padding: 1%;
+    }
+    
+    aside ul, aside ul li, aside ul li a{
+        display: flex;
+        justify-content: space-between;
+    }
+    aside ul li{
+        width: 100%;
+        margin: 0 1vw;
+
+    }
+    aside ul li a{
+        width: 100%;
+        font-weight: 600;
+        font-size: 17px;
+    }
+    
+    article {
+        margin-top: 2vw;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2vw;
+        grid-row-3: span3;
+    }
+    .hidden{
+        display: none;
+    }
+    .view-2{
+        display: block;
+    }
