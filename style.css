@@ -8,10 +8,18 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* ---------
+Main Section
+--------- */
+
 main {
     width: 89%;
     margin: 0 auto;
 }
+
+/* ---------
+Bannar Start
+---------- */
 
 .container {
     display: flex;
@@ -32,17 +40,7 @@ main {
     }
 }
 
-.ball {
-    left: 11.5vw;
-    top: 30.5vw;
-    width: 5vw;
-    height: 5vw;
-    border-radius: 50%;
-    background-color: white;
-    position: relative;
-    animation: sliding 1s ease-in-out 0.1s infinite alternate;
-    animation-play-state: running;
-}
+
 
 @keyframes sliding {
     0% {
@@ -56,6 +54,18 @@ main {
     }
 }
 
+.ball {
+    left: 11.5vw;
+    top: 30.5vw;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    animation: sliding 1s ease-in-out 0.1s infinite alternate;
+    animation-play-state: running;
+}
+
 .bannar-info {
     display: flex;
     justify-content: center;
@@ -65,10 +75,6 @@ main {
     padding-left: 4%;
     width: 50%;
     margin-right: 10%;
-}
-
-.tm {
-    font-size: 16px;
 }
 
 .bannar-info p {
@@ -124,16 +130,24 @@ main {
     align-items: center;
 }
 
+/* ---------
+Bannar End
+---------- */
+
+/* ---------------
+Blog Section Start
+--------------- */
+
 .blog-container {
     display: flex;
-    margin-top: 1.7vh;
+    margin-top: 1em;
 }
 
 aside {
     flex-grow: 1;
     background-color: #841034;
     border-radius: 10px;
-    margin-right: 20px;
+    margin-right: 1em;
     height: 180px;
 }
 
@@ -160,7 +174,7 @@ aside ul li a:visited {
     padding: 10px;
 }
 
-aside ul li a:hover{
+aside ul li a:hover {
     text-indent: 10px;
     background: linear-gradient(rgb(255, 102, 102), rgb(159, 44, 44));
     color: white;
@@ -174,7 +188,7 @@ aside ul li a:hover{
 article {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2em;
+    gap: 1em;
     flex: 18;
 }
 
@@ -193,7 +207,7 @@ article {
 }
 
 .blog-info {
-    padding: 10px;
+    padding: 4% 5% 5%;
 }
 
 .blog-info a {
@@ -229,12 +243,129 @@ article {
     justify-content: flex-start;
 }
 
+/* -------------
+Blog Section End
+------------- */
+
+/* -----------------
+Upcoming Match Start
+----------------- */
+
+.match {
+    width: 100%;
+    background-color: #ffe2ff;
+}
+
+.country {
+    display: flex;
+}
+
+.country img {
+    width: 42%;
+}
+
+.country h3 {
+    margin: 0 5px;
+}
+
+.match-info h3 {
+    margin: 0;
+}
+
+.match-info p {
+    margin: 0;
+    font-weight: 300;
+}
+
+.match {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    border-radius: 7px;
+}
+
+.button-view-all {
+    display: none;
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid gray;
+    padding: 8px 15px;
+    width: 10%;
+    background: linear-gradient(rgb(255, 102, 102), rgb(159, 44, 44));
+    border: 0;
+    border-radius: 7px;
+}
+
+.button-view-all a {
+    text-decoration: none;
+    color: white;
+
+}
+
+/* -------------
+Blog Section End
+------------- */
+
+/* ------------
+All Group Start
+------------ */
+
+.group {
+    background-color: #ffd7e4;
+    border: 1px solid lightgray;
+    border-radius: 7px;
+}
+
+.match-info,
+.country {
+    padding: 10px;
+}
+
+.country img {
+    border-radius: 8px;
+}
+
+.match-info {
+    text-align: center;
+}
+
+.mem-country {
+    display: flex;
+    padding: 1px;
+    background-color: #ffffe8;
+    border-radius: 8px;
+    margin: 3%;
+}
+
+.mem-country h3 {
+    margin: auto 0;
+    font-weight: 500;
+}
+
+.mem-country img {
+    width: 25%;
+    height: 10%;
+    margin: 0 10%;
+}
+
+.group h2 {
+    text-align: center;
+}
+
+/* ----------
+All Group End
+---------- */
+
+/* ---------
+Footer Start
+----------- */
+
 footer {
     background-color: #161616;
     color: white;
     text-align: center;
     padding: 50px 0;
-    margin-top: 30px;
+    margin-top: 1em;
 }
 
 .menu {
@@ -307,103 +438,20 @@ footer small {
     color: rgb(190, 190, 190);
 }
 
-.match {
-    width: 100%;
-    background-color: #ffe2ff;
-}
-
-.country {
-    display: flex;
-}
-
-.country img {
-    width: 42%;
-}
-
-.country h3 {
-    margin: 0 5px;
-}
-
-.match-info h3 {
-    margin: 0;
-}
-
-.match-info p {
-    margin: 0;
-    font-weight: 300;
-}
-
-.match {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid lightgray;
-    border-radius: 7px;
-}
-
-.group {
-    background-color: #ffd7e4;
-    border: 1px solid lightgray;
-    border-radius: 7px;
-}
-
-.match-info,
-.country {
-    padding: 10px;
-}
-
-.match-info {
-    text-align: center;
-}
-
-.mem-country {
-    display: flex;
-    padding: 1px;
-    background-color: #ffffe8;
-    border-radius: 8px;
-    margin: 3%;
-}
-
-.mem-country h3 {
-    margin: auto 0;
-    font-weight: 500;
-}
-
-.mem-country img {
-    width: 25%;
-    height: 10%;
-    margin: 0 10%;
-}
-
-.group h2 {
-    text-align: center;
-}
-.button-view-all{
-    display: none;
-    margin: 20px auto;
-    text-align: center;
-    border: 1px solid gray;
-    padding: 8px 15px;
-    width: 10%;
-    background: linear-gradient(rgb(255, 102, 102), rgb(159, 44, 44));
-    border: 0;
-    border-radius: 7px;
-}
-.button-view-all a{
-    text-decoration: none;
-    color: white;
-
-}
+/* -------
+Footer End
+-------- */
 
 /* --------------------------------------
 Medium devices (tablets, 768px and 992px) 
-----------------------------------------*/
+-------------------------------------- */
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
     .blog-container {
         display: flex;
         flex-direction: column;
-        margin-top: 20px;
     }
+
     aside {
         background: none;
         border: 1px solid lightgray;
@@ -411,26 +459,31 @@ Medium devices (tablets, 768px and 992px)
         height: 100%;
         margin-right: 0;
     }
-    aside ul{
+
+    aside ul {
         margin: 6px 0 0 0;
         padding: 1%;
     }
-    
-    aside ul, aside ul li, aside ul li a{
+
+    aside ul,
+    aside ul li,
+    aside ul li a {
         display: flex;
         justify-content: space-between;
     }
-    aside ul li{
+
+    aside ul li {
         width: 100%;
         margin: 0 1vw;
 
     }
-    aside ul li a{
+
+    aside ul li a {
         width: 100%;
         font-weight: 600;
         font-size: 17px;
     }
-    
+
     article {
         margin-top: 2vw;
         display: grid;
@@ -438,10 +491,124 @@ Medium devices (tablets, 768px and 992px)
         gap: 2vw;
         grid-row-3: span3;
     }
-    .for-hidden{
+
+    .for-hidden {
         display: none;
     }
-    .button-view-all{
+
+    .button-view-all {
         display: block;
+    }
+
+    .mem-country img {
+        width: 15%;
+        height: 5%;
+    }
+
+    .mem-country {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* --------------------------------
+Media Quiries For Tablet Device End
+-------------------------------- */
+
+/* -------------------------------
+Media Quiries For Small Device End
+------------------------------- */
+@media only screen and (max-width: 767.98px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .blog-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    article {
+        margin-top: 2vw;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2vw;
+        grid-row-3: span3;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer small {
+        font-wr
+    }
+
+    aside {
+        border: 1px solid lightgray;
+        border-radius: 10px;
+        height: 100%;
+        margin-right: 0;
+    }
+
+    .bannar-photo img {
+        margin-top: 5%;
+    }
+
+    .mem-country img {
+        width: 10%;
+        height: 5%;
+    }
+
+    .mem-country {
+        display: flex;
+        justify-content: center;
+    }
+
+    .country {
+        display: flex;
+        justify-content: center;
+    }
+
+    .for-hidden {
+        display: none;
+    }
+
+    @keyframes sliding {
+        0% {
+            left: 12.5vw;
+            top: 36.5vw;
+        }
+
+        100% {
+            left: 29vw;
+            top: 36vw;
+        }
+    }
+
+    .ball {
+        left: 11.5vw;
+        top: 36vw;
+        width: 5vw;
+        height: 5vw;
+        border-radius: 50%;
+        background-color: white;
+        position: relative;
+        animation: sliding 1s ease-in-out 0.1s infinite alternate;
+        animation-play-state: running;
+    }
+
+    aside ul li a:link,
+    aside ul li a:visited {
+        font-size: 2.5vw;
+    }
+    .btn {
+        font-size: 2.5vw;
     }
 }
