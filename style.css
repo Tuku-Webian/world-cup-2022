@@ -377,7 +377,7 @@ footer small {
 .group h2 {
     text-align: center;
 }
-.view-1{
+.button-view-all{
     display: none;
     margin: 20px auto;
     text-align: center;
@@ -388,7 +388,7 @@ footer small {
     border: 0;
     border-radius: 7px;
 }
-.view-1 a{
+.button-view-all a{
     text-decoration: none;
     color: white;
 
@@ -438,9 +438,10 @@ Medium devices (tablets, 768px and 992px)
         gap: 2vw;
         grid-row-3: span3;
     }
-    .hidden{
+    .for-hidden{
         display: none;
     }
-    .view-2{
+    .button-view-all{
         display: block;
     }
+}
