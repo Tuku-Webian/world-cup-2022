@@ -145,7 +145,7 @@ main {
     Aside
 --------- */
 aside {
-    flex-grow: 2;
+    flex-grow: 1;
     background-color: #841034;
     border-radius: 10px;
     margin-right: 1em;
