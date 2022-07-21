@@ -1,6 +1,6 @@
-/* ---------
-Google Fonts 
-----------*/
+/* -----------------
+    Google Fonts 
+------------------*/
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
 
@@ -8,18 +8,18 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-/* ---------
-Main Section
---------- */
+/* ----------------
+    Main Section
+---------------- */
 
 main {
     width: 89%;
     margin: 0 auto;
 }
 
-/* ---------
-Bannar Start
----------- */
+/* -----------
+    Bannar
+----------- */
 
 .container {
     display: flex;
@@ -130,19 +130,20 @@ Bannar Start
     align-items: center;
 }
 
-/* ---------
-Bannar End
----------- */
+/* --------------
+    Bannar End
+-------------- */
 
-/* ---------------
-Blog Section Start
---------------- */
 
-.blog-container {
+
+.blog-container-with-aside {
     display: flex;
     margin-top: 1em;
 }
 
+/* ---------
+    Aside
+--------- */
 aside {
     flex-grow: 1;
     background-color: #841034;
@@ -185,12 +186,24 @@ aside ul li a:hover {
     color: yellow;
 }
 
+/* ---------------
+    Aside End
+--------------- */
+
+
+
 article {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1em;
     flex: 18;
 }
+
+
+/* -----------------
+    Blog Section
+----------------- */
+
 
 .blog {
     display: flex;
@@ -243,13 +256,13 @@ article {
     justify-content: flex-start;
 }
 
-/* -------------
-Blog Section End
-------------- */
+/* ---------------------
+    Blog Section End
+--------------------- */
 
-/* -----------------
-Upcoming Match Start
------------------ */
+/* -------------------
+    Upcoming Match
+------------------- */
 
 .match {
     width: 100%;
@@ -302,13 +315,13 @@ Upcoming Match Start
 
 }
 
-/* -------------
-Blog Section End
-------------- */
+/* -----------------------
+    Upcoming Match End
+----------------------- */
 
-/* ------------
-All Group Start
------------- */
+/* -------------
+    All Group
+------------- */
 
 .group {
     background-color: #ffd7e4;
@@ -353,12 +366,12 @@ All Group Start
     text-align: center;
 }
 
-/* ----------
-All Group End
----------- */
+/* -----------------
+    All Group End
+----------------- */
 
-/* ---------
-Footer Start
+/* -----------
+    Footer
 ----------- */
 
 footer {
@@ -439,13 +452,13 @@ footer small {
     color: rgb(190, 190, 190);
 }
 
-/* -------
-Footer End
--------- */
+/* ---------------
+    Footer End
+--------------- */
 
-/* --------------------------------------
-Medium devices (tablets, 768px and 992px) 
--------------------------------------- */
+/* ----------------------------------------------
+    Medium devices (tablets, 768px and 992px) 
+---------------------------------------------- */
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
     .blog-container {
@@ -512,13 +525,13 @@ Medium devices (tablets, 768px and 992px)
     }
 }
 
-/* --------------------------------
-Media Quiries For Tablet Device End
--------------------------------- */
+/* ---------------------------------------
+    Media Quiries For Tablet Device End
+--------------------------------------- */
 
-/* -------------------------------
-Media Quiries For Small Device End
-------------------------------- */
+/* -----------------------------------
+    Media Quiries For Small Device
+----------------------------------- */
 @media only screen and (max-width: 767.98px) {
     .container {
         display: flex;
@@ -614,3 +627,7 @@ Media Quiries For Small Device End
         font-size: 2.5vw;
     }
 }
+
+/* --------------------------------------
+    Media Quiries For Small Device End
+-------------------------------------- */
